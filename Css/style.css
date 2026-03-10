@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --primary-dark: #1a1a2e;
+  --primary-card: #16213e;
+  --primary-red: #e94560;
+  --primary-red-hover: #c73652;
+  --primary-white: #eee;
+  --primary-grey: #aaa;
+  --primary-grey-light: #ccc;
+}
+
+body {
+  font-family: "Courier Prime", sans-serif;
+  background: var(--primary-dark);
+  color: var(--primary-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--primary-red);
+  margin-bottom: 30px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+label {
+  font-size: 1rem;
+  color: var(--primary-grey);
+}
+
+select {
+  padding: 10px 16px;
+  font-size: 1rem;
+  background: var(--primary-card);
+  color: var(--primary-white);
+  border: 2px solid var(--primary-red);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 24px;
+  font-size: 1rem;
+  background: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: var(--primary-red-hover);
+}
+
+#results {
+  background: var(--primary-card);
+  border: 2px solid var(--primary-red);
+  border-radius: 10px;
+  padding: 30px 40px;
+  min-width: 300px;
+  text-align: center;
+  display: none;
+}
+
+#results p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: var(--primary-grey-light);
+}
+
+#winner {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: var(--primary-red);
+  letter-spacing: 2px;
+}
